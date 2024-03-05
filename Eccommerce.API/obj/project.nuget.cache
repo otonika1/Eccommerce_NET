@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "5GBI+U0cE9FXefmxUfSdjTgdslr6s3IuNqolZk95JanywHUoAVqqmaHW7kzlcv3foUJApYu/0Y8SpbtJQ39teQ==",
+  "dgSpecHash": "pVm48zTe1zHt4FU0CF6hAWiEPuyiuAd0kY2rZNWJq05vWB3f4FnbQb3+f4hAuULZX/29jEPo2SWnMM3d/Z8mqg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\O\\Desktop\\Eccommerce\\Eccommerce\\Eccommerce.API\\Eccommerce.API.csproj",
+  "projectFilePath": "C:\\Users\\O\\Desktop\\Eccommerce_NET\\Eccommerce.API\\Eccommerce.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\O\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\O\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\O\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
     "C:\\Users\\O\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

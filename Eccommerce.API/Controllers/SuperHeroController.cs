@@ -1,3 +1,4 @@
+using Eccommerce.API.Entities;
 using Eccommerce.API.Model;
 using Eccommerce.API.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -13,14 +14,14 @@ public class SuperHeroController : ControllerBase
         this._superHeroService = superHeroService;
     }
     [HttpGet("all")]
-    public async Task<ActionResult<List<SuperHero>>> GetAllHeroes()
+    public async Task<ActionResult<List<SuperHeroEntity>>> GetAllHeroes()
     {
-        return Ok(_superHeroService.GetAllHeroes());
+        return Ok(await _superHeroService.GetAllHeroes());
     }
     [HttpGet("{id}")]
-    public async Task<ActionResult<List<SuperHero>>> GetAllHeroesById(int id)
+    public async Task<ActionResult<List<SuperHeroEntity>>> GetAllHeroesById(int id)
     {
-        var result = _superHeroService.GetAllHeroesById(id);
+        var result = await _superHeroService.GetAllHeroesById(id);
         if (result is null)
         {
             return NotFound("Hero Not Found");
@@ -29,16 +30,16 @@ public class SuperHeroController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<ActionResult<SuperHero>> AddHero(SuperHero hero)
+    public async Task<ActionResult<SuperHeroEntity>> AddHero(SuperHeroEntity hero)
     {
-        var result = _superHeroService.AddHero(hero);
+        var result = await _superHeroService.AddHero(hero);
         return Ok(result);
     }
     
     [HttpPut("{id}")]
-    public async Task<ActionResult<List<SuperHero>>> Update(int id,SuperHero request)
+    public async Task<ActionResult<List<SuperHeroEntity>>> Update(int id,SuperHeroEntity request)
     {
-        var result = _superHeroService.Update(id,request);
+        var result = await _superHeroService.Update(id,request);
         if (result is null)
         {
             return NotFound("Hero Not Found");
@@ -46,9 +47,9 @@ public class SuperHeroController : ControllerBase
         return Ok(result);
     }
     [HttpDelete("{id}")]
-    public async Task<ActionResult<SuperHero>> Delete(int id)
+    public async Task<ActionResult<SuperHeroEntity>> Delete(int id)
     {
-        var result = _superHeroService.Delete(id);
+        var result = await _superHeroService.Delete(id);
         if (result is null)
         {
             return NotFound("Hero Not Found");

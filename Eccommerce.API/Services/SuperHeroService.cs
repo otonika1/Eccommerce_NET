@@ -1,30 +1,25 @@
+using Eccommerce.API.DB;
+using Eccommerce.API.Entities;
+using Microsoft.EntityFrameworkCore;
+
 namespace Eccommerce.API.Services;
 
 public class SuperHeroService : ISuperHeroService
 {
-    private static List<SuperHero> superHeroes = new List<SuperHero>
+    private readonly DataContext _context;
+    public SuperHeroService(DataContext context)
     {
-        new SuperHero 
-        {
-            Id = 1,
-            FirstName = "oto",
-            LastName = "avlokhashvili"
-        },
-        new SuperHero
-        {
-            Id = 2,
-            FirstName = "varsqen",
-            LastName = "avlokhashvili"
-        }
-    };
-    public List<SuperHero> GetAllHeroes()
+        _context = context;
+    }
+    public async Task<List<SuperHeroEntity>> GetAllHeroes()
     {
-        return superHeroes;
+        var heroes = await _context.SuperHeroes.ToListAsync();
+        return heroes;
     }
 
-    public SuperHero GetAllHeroesById(int id)
+    public async Task<SuperHeroEntity> GetAllHeroesById(int id)
     {
-        var hero = superHeroes.Find(x => x.Id == id);
+        var hero = await _context.SuperHeroes.FindAsync(id);
         if (hero is null)
         {
             return null;
@@ -32,15 +27,16 @@ public class SuperHeroService : ISuperHeroService
         return hero;
     }
 
-    public SuperHero AddHero(SuperHero hero)
+    public async Task<SuperHeroEntity> AddHero(SuperHeroEntity hero)
     {
-        superHeroes.Add(hero);
+        _context.SuperHeroes.Add(hero);
+        await _context.SaveChangesAsync();
         return hero;
     }
 
-    public SuperHero? Update(int id, SuperHero request)
+    public async Task<SuperHeroEntity?> Update(int id, SuperHeroEntity request)
     {
-        var hero = superHeroes.Find(x => x.Id == id);
+        var hero = await _context.SuperHeroes.FindAsync(id);
         if (hero is null)
         {
             return null;
@@ -49,18 +45,21 @@ public class SuperHeroService : ISuperHeroService
         hero.FirstName = request.FirstName;
         hero.Id = request.Id;
         hero.LastName = request.LastName;
+
+        await _context.SaveChangesAsync();
         return hero;
     }
 
-    public SuperHero? Delete(int id)
+    public async Task<SuperHeroEntity?> Delete(int id)
     {
-        var hero = superHeroes.Find(x => x.Id == id);
+        var hero = await _context.SuperHeroes.FindAsync(id);
         if (hero is null)
         {
             return null;
         }
 
-        superHeroes.Remove(hero);
+        _context.SuperHeroes.Remove(hero);
+        await _context.SaveChangesAsync();
         return hero;
     }
 }

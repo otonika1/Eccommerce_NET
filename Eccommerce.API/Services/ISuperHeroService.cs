@@ -1,10 +1,12 @@
+using Eccommerce.API.Entities;
+
 namespace Eccommerce.API.Services;
 
 public interface ISuperHeroService
 {
-    List<SuperHero> GetAllHeroes();
-    SuperHero GetAllHeroesById(int id);
-    SuperHero AddHero(SuperHero hero);
-    SuperHero? Update(int id, SuperHero request);
-    SuperHero? Delete(int id);
+    Task<List<SuperHeroEntity>> GetAllHeroes();
+    Task<SuperHeroEntity> GetAllHeroesById(int id);
+    Task<SuperHeroEntity> AddHero(SuperHeroEntity hero);
+    Task<SuperHeroEntity?> Update(int id, SuperHeroEntity request);
+    Task<SuperHeroEntity?> Delete(int id);
 }
