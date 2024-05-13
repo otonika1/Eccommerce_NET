@@ -1,3 +1,4 @@
+using AutoMapper;
 using Eccommerce.API.DB;
 using Eccommerce.API.Entities;
 using Microsoft.EntityFrameworkCore;
@@ -7,9 +8,11 @@ namespace Eccommerce.API.Services;
 public class SuperHeroService : ISuperHeroService
 {
     private readonly DataContext _context;
-    public SuperHeroService(DataContext context)
+    public readonly IMapper _mapper;
+    public SuperHeroService(DataContext context,IMapper mapper)
     {
         _context = context;
+        _mapper = mapper;
     }
     public async Task<List<SuperHeroEntity>> GetAllHeroes()
     {
@@ -27,14 +30,15 @@ public class SuperHeroService : ISuperHeroService
         return hero;
     }
 
-    public async Task<SuperHeroEntity> AddHero(SuperHeroEntity hero)
+    public async Task<SuperHeroEntity> AddHero(SuperHero hero)
     {
-        _context.SuperHeroes.Add(hero);
+        var mappedHero = _mapper.Map<SuperHeroEntity>(hero);
+        _context.SuperHeroes.Add(mappedHero);
         await _context.SaveChangesAsync();
-        return hero;
+        return mappedHero;
     }
 
-    public async Task<SuperHeroEntity?> Update(int id, SuperHeroEntity request)
+    public async Task<SuperHeroEntity?> Update(int id, SuperHero request)
     {
         var hero = await _context.SuperHeroes.FindAsync(id);
         if (hero is null)
@@ -43,9 +47,9 @@ public class SuperHeroService : ISuperHeroService
         }
 
         hero.FirstName = request.FirstName;
-        hero.Id = request.Id;
+        hero.Id = id;
         hero.LastName = request.LastName;
-
+        hero = _mapper.Map<SuperHeroEntity>(hero);
         await _context.SaveChangesAsync();
         return hero;
     }

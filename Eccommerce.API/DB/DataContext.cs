@@ -14,5 +14,6 @@ namespace Eccommerce.API.DB
         }
 
         public DbSet<SuperHeroEntity> SuperHeroes { get; set; }
+        public DbSet<Employee> Employees { get; set; }
     }
 }

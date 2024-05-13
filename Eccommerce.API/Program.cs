@@ -12,6 +12,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<ISuperHeroService, SuperHeroService>();
+builder.Services.AddScoped<IEmployeeService, EmployeeService>();
+builder.Services.AddAutoMapper(typeof(Program).Assembly);
 //builder.Services.AddDbContext<DataContext>();
 builder.Services.AddDbContext<DataContext>(opt =>
 {

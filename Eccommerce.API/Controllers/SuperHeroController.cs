@@ -1,3 +1,4 @@
+using AutoMapper;
 using Eccommerce.API.Entities;
 using Eccommerce.API.Model;
 using Eccommerce.API.Services;
@@ -30,14 +31,15 @@ public class SuperHeroController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<ActionResult<SuperHeroEntity>> AddHero(SuperHeroEntity hero)
+    public async Task<ActionResult<SuperHeroEntity>> AddHero(SuperHero hero)
     {
+        
         var result = await _superHeroService.AddHero(hero);
         return Ok(result);
     }
     
     [HttpPut("{id}")]
-    public async Task<ActionResult<List<SuperHeroEntity>>> Update(int id,SuperHeroEntity request)
+    public async Task<ActionResult<List<SuperHeroEntity>>> Update(int id,SuperHero request)
     {
         var result = await _superHeroService.Update(id,request);
         if (result is null)

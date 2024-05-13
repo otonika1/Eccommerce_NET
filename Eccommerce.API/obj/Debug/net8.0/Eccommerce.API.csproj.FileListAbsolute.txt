@@ -138,3 +138,4 @@ C:\Users\O\Desktop\Eccommerce_NET\Eccommerce.API\obj\Debug\net8.0\refint\Eccomme
 C:\Users\O\Desktop\Eccommerce_NET\Eccommerce.API\obj\Debug\net8.0\Eccommerce.API.pdb
 C:\Users\O\Desktop\Eccommerce_NET\Eccommerce.API\obj\Debug\net8.0\Eccommerce.API.genruntimeconfig.cache
 C:\Users\O\Desktop\Eccommerce_NET\Eccommerce.API\obj\Debug\net8.0\ref\Eccommerce.API.dll
+C:\Users\O\Desktop\Eccommerce_NET\Eccommerce.API\bin\Debug\net8.0\AutoMapper.dll
