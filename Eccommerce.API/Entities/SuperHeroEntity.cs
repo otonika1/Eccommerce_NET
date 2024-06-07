@@ -13,11 +13,7 @@ public class SuperHeroEntity
     public string FirstName { get; set; }
     [Column("Last_Name")]
     public string LastName { get; set; }
-
-    public SuperHeroEntity(string firstName, string lastName)
-    {
-        FirstName = firstName;
-        LastName = lastName;
-    }
+    [Column("superheros")]
+    public List<SuperHero> SuperHero { get; set; }
     
 }

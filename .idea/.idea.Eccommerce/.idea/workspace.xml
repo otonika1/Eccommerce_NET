@@ -10,27 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99be0c60-d11b-45c9-841b-3fb79864d7de" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Eccommerce.API/AutoMapper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eccommerce.API/Controllers/EmployeeController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eccommerce.API/Entities/Employee.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eccommerce.API/Model/EmployeeModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eccommerce.API/Services/EmployeeService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eccommerce.API/Services/IEmployeeService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Eccommerce/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Eccommerce/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eccommerce.API/Controllers/SuperHeroController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/Controllers/SuperHeroController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eccommerce.API/DB/DataContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/DB/DataContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eccommerce.API/Migrations/DataContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/Migrations/DataContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eccommerce.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eccommerce.API/Services/ISuperHeroService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/Services/ISuperHeroService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eccommerce.API/Services/SuperHeroService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/Services/SuperHeroService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eccommerce.API/bin/Debug/net8.0/Eccommerce.API.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/bin/Debug/net8.0/Eccommerce.API.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eccommerce.API/Entities/SuperHeroEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/Entities/SuperHeroEntity.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eccommerce.API/bin/Debug/net8.0/Eccommerce.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/bin/Debug/net8.0/Eccommerce.API.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eccommerce.API/bin/Debug/net8.0/Eccommerce.API.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/bin/Debug/net8.0/Eccommerce.API.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eccommerce.API/bin/Debug/net8.0/Eccommerce.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/bin/Debug/net8.0/Eccommerce.API.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eccommerce.API/obj/Debug/net8.0/Eccommerce.API.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/obj/Debug/net8.0/Eccommerce.API.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eccommerce.API/obj/Debug/net8.0/Eccommerce.API.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/obj/Debug/net8.0/Eccommerce.API.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eccommerce.API/obj/Debug/net8.0/Eccommerce.API.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/obj/Debug/net8.0/Eccommerce.API.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eccommerce.API/obj/Debug/net8.0/Eccommerce.API.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/obj/Debug/net8.0/Eccommerce.API.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eccommerce.API/obj/Debug/net8.0/Eccommerce.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/obj/Debug/net8.0/Eccommerce.API.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eccommerce.API/obj/Debug/net8.0/Eccommerce.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/obj/Debug/net8.0/Eccommerce.API.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eccommerce.API/obj/Debug/net8.0/Eccommerce.API.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/obj/Debug/net8.0/Eccommerce.API.sourcelink.json" afterDir="false" />
@@ -150,6 +136,8 @@
       <workItem from="1715085283382" duration="1805000" />
       <workItem from="1715087146704" duration="2955000" />
       <workItem from="1715096257176" duration="1558000" />
+      <workItem from="1717674036918" duration="233000" />
+      <workItem from="1717675556329" duration="47000" />
     </task>
     <servers />
   </component>
