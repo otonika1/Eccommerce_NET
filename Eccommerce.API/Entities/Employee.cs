@@ -18,12 +18,10 @@ public class Employee
     public string PhoneNumber { get; set; }
     [Column("addresses")]
     public List<String> Addresses { get; set; }
+    [Column("DepartmentId")]
+    public int DepartmentId { get; set; }
+
+    [ForeignKey("DepartmentId")]
+    public Department Department { get; set; }
     
-    /*public Employee(string firstName, string lastName, string phoneNumber, List<string> addresses)
-    {
-        FirstName = firstName;
-        LastName = lastName;
-        PhoneNumber = phoneNumber;
-        Addresses = addresses;
-    }*/
 }

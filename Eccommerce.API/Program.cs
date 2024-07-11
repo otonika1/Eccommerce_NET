@@ -1,5 +1,6 @@
 global using Eccommerce.API.Model;
 using Eccommerce.API.DB;
+using Eccommerce.API.Entities;
 using Eccommerce.API.Services;
 using Microsoft.EntityFrameworkCore;
 
@@ -13,6 +14,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<ISuperHeroService, SuperHeroService>();
 builder.Services.AddScoped<IEmployeeService, EmployeeService>();
+builder.Services.AddScoped<IDepartmentService, DepartmentService>();
 builder.Services.AddAutoMapper(typeof(Program).Assembly);
 //builder.Services.AddDbContext<DataContext>();
 builder.Services.AddDbContext<DataContext>(opt =>

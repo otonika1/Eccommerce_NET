@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pVm48zTe1zHt4FU0CF6hAWiEPuyiuAd0kY2rZNWJq05vWB3f4FnbQb3+f4hAuULZX/29jEPo2SWnMM3d/Z8mqg==",
+  "dgSpecHash": "XVmxzEP5BXOnC7bcbKyH+hTiZ+xqXldo0ZjYzipYpI6QaHXwjTB5ivY8hzokSqv3tIOyasHOBIfVWap6AU6bAA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\O\\Desktop\\Eccommerce_NET\\Eccommerce.API\\Eccommerce.API.csproj",
+  "projectFilePath": "C:\\Users\\O\\Desktop\\.net\\Eccommerce_NET\\Eccommerce.API\\Eccommerce.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\O\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\O\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",

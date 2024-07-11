@@ -10,19 +10,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99be0c60-d11b-45c9-841b-3fb79864d7de" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Eccommerce.API/Controllers/DepartmentsController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eccommerce.API/Entities/Department.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eccommerce.API/Model/DepartmentsModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eccommerce.API/Services/DepartmentService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eccommerce.API/Services/IDepartmentService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Eccommerce/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Eccommerce/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eccommerce.API/AutoMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/AutoMapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eccommerce.API/Controllers/EmployeeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/Controllers/EmployeeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eccommerce.API/DB/DataContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/DB/DataContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eccommerce.API/Entities/Employee.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/Entities/Employee.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eccommerce.API/Entities/SuperHeroEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/Entities/SuperHeroEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eccommerce.API/Migrations/20240305083008_Initial.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eccommerce.API/Migrations/20240305083008_Initial.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eccommerce.API/Migrations/20240507131349_employee-migration.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eccommerce.API/Migrations/20240507131349_employee-migration.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eccommerce.API/Migrations/DataContextModelSnapshot.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eccommerce.API/Model/EmployeeModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/Model/EmployeeModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eccommerce.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eccommerce.API/Services/EmployeeService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/Services/EmployeeService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eccommerce.API/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eccommerce.API/bin/Debug/net8.0/Eccommerce.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/bin/Debug/net8.0/Eccommerce.API.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eccommerce.API/bin/Debug/net8.0/Eccommerce.API.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/bin/Debug/net8.0/Eccommerce.API.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eccommerce.API/bin/Debug/net8.0/Eccommerce.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/bin/Debug/net8.0/Eccommerce.API.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eccommerce.API/bin/Debug/net8.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/bin/Debug/net8.0/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eccommerce.API/obj/Debug/net8.0/Eccommerce.API.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/obj/Debug/net8.0/Eccommerce.API.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eccommerce.API/obj/Debug/net8.0/Eccommerce.API.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/obj/Debug/net8.0/Eccommerce.API.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eccommerce.API/obj/Debug/net8.0/Eccommerce.API.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/obj/Debug/net8.0/Eccommerce.API.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eccommerce.API/obj/Debug/net8.0/Eccommerce.API.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/obj/Debug/net8.0/Eccommerce.API.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eccommerce.API/obj/Debug/net8.0/Eccommerce.API.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/obj/Debug/net8.0/Eccommerce.API.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eccommerce.API/obj/Debug/net8.0/Eccommerce.API.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/obj/Debug/net8.0/Eccommerce.API.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eccommerce.API/obj/Debug/net8.0/Eccommerce.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/obj/Debug/net8.0/Eccommerce.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eccommerce.API/obj/Debug/net8.0/Eccommerce.API.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/obj/Debug/net8.0/Eccommerce.API.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eccommerce.API/obj/Debug/net8.0/Eccommerce.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/obj/Debug/net8.0/Eccommerce.API.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eccommerce.API/obj/Debug/net8.0/Eccommerce.API.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/obj/Debug/net8.0/Eccommerce.API.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eccommerce.API/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/obj/Debug/net8.0/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eccommerce.API/obj/Debug/net8.0/ref/Eccommerce.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/obj/Debug/net8.0/ref/Eccommerce.API.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eccommerce.API/obj/Debug/net8.0/refint/Eccommerce.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/obj/Debug/net8.0/refint/Eccommerce.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eccommerce.API/obj/Eccommerce.API.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/obj/Eccommerce.API.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eccommerce.API/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eccommerce.API/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eccommerce.API/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eccommerce.API/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eccommerce.API/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Eccommerce.API/obj/rider.project.restore.info" afterDir="false" />
     </list>
@@ -49,28 +77,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.Eccommerce.API: http.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.Eccommerce.API: http.executor": "Debug",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\O\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\O\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\O\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\O\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\O\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\O\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Eccommerce.API: http">
     <configuration name="Eccommerce.API: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Eccommerce.API/Eccommerce.API.csproj" />
@@ -138,6 +166,14 @@
       <workItem from="1715096257176" duration="1558000" />
       <workItem from="1717674036918" duration="233000" />
       <workItem from="1717675556329" duration="47000" />
+      <workItem from="1718110879063" duration="26000" />
+      <workItem from="1718110936910" duration="23000" />
+      <workItem from="1719814809679" duration="96000" />
+      <workItem from="1720445303553" duration="2982000" />
+      <workItem from="1720507570082" duration="344000" />
+      <workItem from="1720509582003" duration="4125000" />
+      <workItem from="1720596940133" duration="2294000" />
+      <workItem from="1720684246716" duration="3889000" />
     </task>
     <servers />
   </component>
@@ -147,5 +183,24 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Eccommerce.API/Controllers/DepartmentsController.cs</url>
+          <line>18</line>
+          <properties documentPath="C:\Users\O\Desktop\.net\Eccommerce_NET\Eccommerce.API\Controllers\DepartmentsController.cs" initialLine="18" containingFunctionPresentation="Method 'GetAllDepartments'">
+            <startOffsets>
+              <option value="525" />
+            </startOffsets>
+            <endOffsets>
+              <option value="572" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

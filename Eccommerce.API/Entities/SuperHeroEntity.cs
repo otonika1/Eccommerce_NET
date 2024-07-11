@@ -14,6 +14,6 @@ public class SuperHeroEntity
     [Column("Last_Name")]
     public string LastName { get; set; }
     [Column("superheros")]
-    public List<SuperHero> SuperHero { get; set; }
+    public List<SuperHeroEntity> SuperHero { get; set; }
     
 }

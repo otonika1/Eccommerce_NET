@@ -9,5 +9,6 @@ public class AutoMapper : Profile
     {
         CreateMap<SuperHeroEntity, SuperHero>().ReverseMap();
         CreateMap<EmployeeModel, Employee>().ReverseMap();
+        CreateMap<Department, DepartmentsModel>().ReverseMap();
     }
 }

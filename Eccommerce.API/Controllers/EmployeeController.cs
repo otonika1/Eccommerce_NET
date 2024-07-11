@@ -35,9 +35,28 @@ public class EmployeeController : ControllerBase
     [HttpPost]
     public async Task<ActionResult<Employee>> AddEmployee(EmployeeModel employee)
     {
+
         
-        var result = await _employeeService.AddEmployee(employee);
-        return Ok(result);
+        try
+        {
+            var result = await _employeeService.AddEmployee(employee);
+            return Ok(result);
+        }
+        catch (ArgumentNullException ex)
+        {
+            // Handle specific exception if id is null or other argument issues
+            return BadRequest($"Invalid input: {ex.Message}");
+        }
+        catch (InvalidOperationException ex)
+        {
+            // Handle specific exception if the operation is invalid (e.g., trying to delete a non-existing entity)
+            return BadRequest($"Operation failed: {ex.Message}");
+        }
+        catch (Exception ex)
+        {
+            // Handle all other exceptions
+            return StatusCode(500, $"Internal server error: {ex.Message}");
+        }
     }
     [HttpPut("{id}")]
     public async Task<ActionResult<Employee>> UpdateEmployee(int id,EmployeeModel employee)

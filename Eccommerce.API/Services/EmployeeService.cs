@@ -17,13 +17,16 @@ public class EmployeeService:IEmployeeService
     
     public async Task<List<Employee>> GetAllEmployees()
     {
-        var employees =await _context.Employees.ToListAsync();
+        
+        var employees =await _context.Employees
+            .Include(e => e.Department)
+            .ToListAsync();
         return employees;
     }
 
     public async Task<Employee> GetEmployeeById(int id)
     {
-        var employee = await _context.Employees.FindAsync(id);
+        var employee = await _context.Employees.Include(e => e.Department).FirstOrDefaultAsync(e => e.Id == id);
         if (employee is null)
         {
             return null;
@@ -34,6 +37,11 @@ public class EmployeeService:IEmployeeService
     public async Task<Employee> AddEmployee(EmployeeModel employee)
     {
         var mappedEmployee = _mapper.Map<Employee>(employee);
+        mappedEmployee.Department = await _context.Departments.FindAsync(employee.DepartmentId);
+        if (mappedEmployee.Department is null)
+        {
+            throw new ArgumentException("Department Not Found");
+        }
         _context.Employees.Add(mappedEmployee);
         await _context.SaveChangesAsync();
         return mappedEmployee;
