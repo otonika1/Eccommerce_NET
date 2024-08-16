@@ -3,6 +3,7 @@ using Eccommerce.API.DB;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Eccommerce.API.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20240731132812_test-mig-6")]
+    partial class testmig6
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -121,13 +124,11 @@ namespace Eccommerce.API.Migrations
 
             modelBuilder.Entity("Eccommerce.API.Entities.SuperHeroEntity", b =>
                 {
-                    b.HasOne("Eccommerce.API.Entities.Employee", "Employee")
+                    b.HasOne("Eccommerce.API.Entities.Employee", null)
                         .WithMany("SuperHeros")
                         .HasForeignKey("EmployeeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Employee");
                 });
 
             modelBuilder.Entity("Eccommerce.API.Entities.Department", b =>

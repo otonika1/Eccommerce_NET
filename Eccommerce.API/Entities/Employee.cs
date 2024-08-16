@@ -23,5 +23,5 @@ public class Employee
 
     [ForeignKey("DepartmentId")]
     public Department Department { get; set; }
-    
+    public List<SuperHeroEntity> SuperHeros { get; set; }
 }

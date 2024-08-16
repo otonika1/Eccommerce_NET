@@ -4,4 +4,5 @@ public class SuperHero
 {
     public string FirstName { get; set; }
     public string LastName { get; set; }
+    public int EmployeeId { get; set; }
 }

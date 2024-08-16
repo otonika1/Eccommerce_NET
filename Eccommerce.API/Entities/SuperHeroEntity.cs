@@ -13,7 +13,11 @@ public class SuperHeroEntity
     public string FirstName { get; set; }
     [Column("Last_Name")]
     public string LastName { get; set; }
-    [Column("superheros")]
-    public List<SuperHeroEntity> SuperHero { get; set; }
+    
+    [Column("EmployeeId")]
+    public int EmployeeId { get; set; }
+    
+    [ForeignKey("EmployeeId")]
+    public Employee Employee { get; set; }
     
 }

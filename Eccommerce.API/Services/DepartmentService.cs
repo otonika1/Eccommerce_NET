@@ -14,10 +14,17 @@ public class DepartmentService : IDepartmentService
         _context = context;
         _mapper = mapper;
     }
-    public async Task<List<Department>> GetAll()
+    public async Task<List<DepartmentViewModel>> GetAll()
     {
         var departments = await _context.Departments.Include(e => e.Employees).ToListAsync();
-        return departments;
+        var viewModel = departments.Select(e => new DepartmentViewModel()
+        {
+            Id = e.Id,
+            Name = e.Name,
+            EmployeeCount = e.EmployeeCount ?? 0,
+            Employees = _mapper.Map<List<ViewModel>>(e.Employees)
+        }).ToList();
+        return viewModel;
     }
 
     public async Task<Department> GetById(int id)

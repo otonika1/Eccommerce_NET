@@ -4,7 +4,7 @@ namespace Eccommerce.API.Services;
 
 public interface IDepartmentService
 {
-    Task<List<Department>> GetAll();
+    Task<List<DepartmentViewModel>> GetAll();
     Task<Department> GetById(int id);
     Task<Department> Post(DepartmentsModel employee);
     Task<Department?> Put(int id, Department request);

@@ -5,10 +5,10 @@ namespace Eccommerce.API.Services;
 
 public interface IEmployeeService
 {
-    Task<List<Employee>> GetAllEmployees();
-    Task<Employee> GetEmployeeById(int id);
-    Task<Employee> AddEmployee(EmployeeModel employee);
-    Task<Employee?> Update(int id, EmployeeModel request);
-    Task<Employee?> Delete(int id);
-    Task<List<Employee>?> DeleteAll();
+    Task<List<EmployeeViewModel>> GetAllEmployees(int? DepartmentId, string? FirstName, string? SortOrder, int PageNumber, int PageSize);
+    Task<EmployeeViewModel> GetEmployeeById(int id);
+    Task<EmployeeViewModel> AddEmployee(EmployeeModel employee);
+    Task<EmployeeViewModel?> Update(int id, EmployeeModel request);
+    Task<EmployeeViewModel?> Delete(int id);
+    Task<List<EmployeeViewModel>?> DeleteAll();
 }

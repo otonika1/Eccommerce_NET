@@ -16,7 +16,7 @@ public class SuperHeroService : ISuperHeroService
     }
     public async Task<List<SuperHeroEntity>> GetAllHeroes()
     {
-        var heroes = await _context.SuperHeroes.ToListAsync();
+        var heroes = await _context.SuperHeroes.Include(e => e.Employee).ToListAsync();
         return heroes;
     }
 

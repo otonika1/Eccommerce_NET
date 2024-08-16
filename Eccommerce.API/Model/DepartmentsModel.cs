@@ -2,7 +2,8 @@
 
 public class DepartmentsModel
 {
+    
     public string Name { get; set; }
     public int EmployeeCount { get; set; }
-    
+    //public List<EmployeeModel> Employees { get; set; } 
 }

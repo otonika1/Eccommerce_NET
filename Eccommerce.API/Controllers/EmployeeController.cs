@@ -16,13 +16,13 @@ public class EmployeeController : ControllerBase
         this._employeeService = employeeService;
     } 
     [HttpGet("all")]
-    public async Task<ActionResult<List<Employee>>> GetAllEmployees()
+    public async Task<ActionResult<List<Employee>>> GetAllEmployees(int? DepartmentId,string? FirstName, string? SortOrder = "asc", int PageNumber = 1, int PageSize = 10)
     {
-        return Ok(await _employeeService.GetAllEmployees());
+        return Ok(await _employeeService.GetAllEmployees(DepartmentId, FirstName, SortOrder, PageNumber, PageSize));
     }
 
     [HttpGet("{id}")]
-    public async Task<ActionResult<Employee>> GetEmployeesById(int id)
+    public async Task<ActionResult<EmployeeViewModel>> GetEmployeesById(int id)
     {
         var employee = await _employeeService.GetEmployeeById(id);
         if (employee is null)
@@ -33,7 +33,7 @@ public class EmployeeController : ControllerBase
         return employee;
     }
     [HttpPost]
-    public async Task<ActionResult<Employee>> AddEmployee(EmployeeModel employee)
+    public async Task<ActionResult<EmployeeViewModel>> AddEmployee(EmployeeModel employee)
     {
 
         
@@ -59,7 +59,7 @@ public class EmployeeController : ControllerBase
         }
     }
     [HttpPut("{id}")]
-    public async Task<ActionResult<Employee>> UpdateEmployee(int id,EmployeeModel employee)
+    public async Task<ActionResult<EmployeeViewModel>> UpdateEmployee(int id,EmployeeModel employee)
     {
         
         var result = await _employeeService.Update(id,employee);
@@ -70,7 +70,7 @@ public class EmployeeController : ControllerBase
         return Ok(result);
     }
     [HttpDelete("{id}")]
-    public async Task<ActionResult<SuperHeroEntity>> Delete(int id)
+    public async Task<ActionResult<EmployeeViewModel>> Delete(int id)
     {
         var result = await _employeeService.Delete(id);
         if (result is null)
@@ -80,7 +80,7 @@ public class EmployeeController : ControllerBase
         return Ok(result);
     }
     [HttpDelete("all")]
-    public async Task<ActionResult<SuperHeroEntity>> DeleteAll()
+    public async Task<ActionResult<EmployeeViewModel>> DeleteAll()
     {
         var result = await _employeeService.DeleteAll();
         if (result is null)

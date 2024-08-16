@@ -1,4 +1,5 @@
 global using Eccommerce.API.Model;
+using System.Text.Json.Serialization;
 using Eccommerce.API.DB;
 using Eccommerce.API.Entities;
 using Eccommerce.API.Services;
@@ -21,7 +22,9 @@ builder.Services.AddDbContext<DataContext>(opt =>
 {
     opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
-
+//this fixes serialization problem
+builder.Services.AddControllers().AddJsonOptions(x =>
+    x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 
 var app = builder.Build();
 
